@@ -7,10 +7,12 @@ def reverse_int(num):
       Arguments: Argument 0 contains an integer to reverse
       Return values: Returns the reversed number or 0
     '''
+    
+    # Check to make sure argument zero contains an integer
     if type(num) != int:
         return("0")
 
-    # Handles zero or a NULL value
+    # Handle zero or a NULL value
     elif not num or num == 0:
         return("0")
 
