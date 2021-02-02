@@ -9,11 +9,11 @@ def reverse_int(num):
     '''
     
     # Check to make sure argument zero contains an integer
-    if type(num) != int:
+    if not num or type(num) != int:
         return("0")
 
-    # Handle zero or a NULL value
-    elif not num or num == 0:
+    # Handle zero or a NULL value 
+    elif num == 0:
         return("0")
 
     # Handles negative numbers
